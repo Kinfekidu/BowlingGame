@@ -11,8 +11,11 @@ class TestBowlingGame(unittest.TestCase):
             self.game.rolls.append(0)  #Append 0 to the rolls list
         assert self.game.score()==0
     def testAllOnes(self):
-        self.rollMany(1, 20)
+        self.rollMany(1, 20) # Roll 1 for each of the20 rolls
         assert self.game.score()==20
+        def rollMany(self, pins, rolls):
+            for 1 in range(rolls):
+                self.game.rolls.append(pins)  #Append pins to thevrolls list
     def testOneSpare(self):
         self.game.rolls(5)
         self.game.rolls(5)
