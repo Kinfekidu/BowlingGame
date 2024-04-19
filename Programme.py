@@ -1,4 +1,6 @@
-def add(self, a, b):
+
+class Calculator:
+    def add(self, a, b):
         """
         Add two numbers.
 
